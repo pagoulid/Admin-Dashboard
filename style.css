@@ -1,6 +1,6 @@
 :root{
     --blue-clr:rgb(29, 142, 208);
-    --grey-clr:rgb(182, 175, 175);
+    --grey-clr:#E5E7EB;
 }
 *{
     margin:0;
@@ -102,7 +102,7 @@ ul{
     margin-top:2rem;
     flex-basis:100%;
     display:grid;
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat(4,auto);
     grid-template-columns: repeat(2,auto);
     gap:1rem;
     padding-left:5%;
@@ -136,11 +136,16 @@ ul{
     
    
 }
+hr{
+    width:70%;
+    color:grey;
+    margin:auto;
+}
     /*CONTENT CONTAINER 1*/
     /*CONTENT CONTAINER 2*/
 .content .content-container-2 .card{
     width:95%;
-    height:35vh;
+    height:40vh;
     padding-top: 1rem;
     
     display:flex;
