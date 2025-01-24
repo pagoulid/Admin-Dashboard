@@ -70,8 +70,8 @@ ul{
 
 
 .content{
-    grid-row: 2 / span 3;
     display:flex;
+    gap:1rem;
     flex-direction: var(--direct-row);
     background-color: var(--grey-clr) ;  
 }
@@ -180,13 +180,18 @@ ul{
     margin-bottom: 0.5rem;
 }
     /*CONTENT CONTAINER 1*/
+    .content-container-1{
+        display:grid;
+        grid-template-columns:repeat(2,minmax(250px,1fr));
+        gap:0.5rem;
+    }
 .content .content-container-1 .card{
-    width:80%;
-    height:20vh;
+    /*width:80%;
+    height:20vh;*/
     background-color: var(--white-clr);
     border-radius:var(--brd-rad-md);
     box-shadow: 10px 1px  goldenrod inset;
-    padding:2rem;
+    padding:1rem;
 
 }
 .content .content-container-1 .card p{
@@ -228,9 +233,7 @@ hr{
     margin-bottom:5px;
 
 }
-.content .content-container-2>div{
-    padding-left:3rem;/*The divs childs which contains the cards*/
-}
+
 .content .content-container-2 .card>div{
     margin-left: 2rem;
 }
