@@ -63,7 +63,7 @@ ul{
     overflow: hidden;
     background-color: var(--blue-clr);
 }
-.header{
+/*.header{
     display:grid;
     height: max-content;
     grid-template-rows: 2rem 3rem;
@@ -73,7 +73,18 @@ ul{
     padding-top:1rem;
     padding-left:2%;
     
+}*/
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center
 }
+.wrapper.start{justify-content:start;}
+.wrapper.end{justify-content:end;}
+
+
+
+
 .content{
     grid-row: 2 / span 3;
     display:flex;
