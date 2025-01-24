@@ -31,6 +31,8 @@ html,body{
 ul{
     list-style: none;
 }
+.sidebar .desktop-section{display:none;}
+.sidebar .mobile-section{display:block;}
 .main-container{ 
     display:flex;
     flex-direction:column;
@@ -38,6 +40,8 @@ ul{
 }
 
 @media only screen and (min-width:850px){
+    .sidebar .desktop-section{display:block;}
+    .sidebar .mobile-section{display:none;}
     .main-container{ flex-direction:row; }
     .sidebar{
         flex-basis:250px;
